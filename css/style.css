@@ -485,6 +485,9 @@ body {
 .page-include__block:not(:last-child) {
   margin-bottom: .625rem
 }
+.page-include__block-image {
+  min-width: 25.59px
+}
 .page-include__block-image img {
   max-width: 100%
 }
@@ -512,6 +515,9 @@ body {
 }
 .page-bonuses__block:not(:last-child) {
   margin-bottom: .625rem
+}
+.page-bonuses__block-image {
+  min-width: 25.59px
 }
 .page-bonuses__block-image img {
   max-width: 100%
