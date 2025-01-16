@@ -16,7 +16,7 @@
 body,
 html {
   height: 100%;
-  min-width: 400px
+  min-width: 375px
 }
 body {
   color: #fff;
@@ -295,6 +295,9 @@ body {
 .start-page__title:not(:last-child) {
   margin-bottom: 2.0625rem
 }
+.start-page__highlight {
+  max-width: 222px
+}
 .start-page__highlight:not(:last-child) {
   margin-bottom: 1.9375rem
 }
@@ -322,7 +325,7 @@ body {
 .start-page__image {
   display: flex;
   position: absolute;
-  right: 0;
+  right: -8%;
   bottom: 6%;
   z-index: -1
 }
@@ -882,7 +885,7 @@ body {
     line-height: 1rem
   }
   .start-page__image {
-    width: 40.625rem
+    width: 39.375rem
   }
   .faq-page__block:nth-child(2n) {
     max-width: 48rem
@@ -891,7 +894,12 @@ body {
     max-width: 40rem
   }
 }
-@media (max-width:25em) {
+@media (max-width:47.99875em) {
+  .audience-page__block:not(:last-child) {
+    margin-bottom: 1.6875rem
+  }
+}
+@media (max-width:23.4375em) {
   section {
     padding-left: .0000000625rem
   }
@@ -899,88 +907,88 @@ body {
     padding-right: .0000000625rem
   }
   .title {
-    font-size: 1.6875rem
+    font-size: 1.625rem
   }
   .title {
-    line-height: 2.356875rem
+    line-height: 2.294375rem
   }
   .title--h1 {
-    font-size: 1.3125rem
+    font-size: 1.25rem
   }
   .title--h1 {
-    line-height: 1.910625rem
+    line-height: 1.848125rem
   }
   .title--subtitle-1 {
     font-size: 1.0625rem
   }
   .title--subtitle-1 {
-    line-height: 1.464375rem
+    line-height: 1.401875rem
   }
   .title--subtitle-2 {
+    font-size: 1.0625rem
+  }
+  .title--subtitle-2 {
+    line-height: 1.5625rem
+  }
+  .title--price {
+    font-size: 1.3125rem
+  }
+  .title--price {
+    line-height: 1.848125rem
+  }
+  .title--discount {
+    font-size: .9375rem
+  }
+  .title--discount {
+    line-height: 1.3125rem
+  }
+  .title--button {
+    font-size: 1.3125rem
+  }
+  .title--button {
+    line-height: 1.848125rem
+  }
+  .title--button-discount {
     font-size: 1.125rem
   }
-  .title--subtitle-2 {
-    line-height: 1.625rem
-  }
-  .title--price {
-    font-size: 1.375rem
-  }
-  .title--price {
-    line-height: 1.910625rem
-  }
-  .title--discount {
-    font-size: 1rem
-  }
-  .title--discount {
-    line-height: 1.375rem
-  }
-  .title--button {
-    font-size: 1.375rem
-  }
-  .title--button {
-    line-height: 1.910625rem
-  }
   .title--button-discount {
+    line-height: 1.580625rem
+  }
+  .title--numbers {
+    font-size: 1.3125rem
+  }
+  .title--numbers {
+    line-height: 2.3125rem
+  }
+  .title--counter {
     font-size: 1.1875rem
   }
-  .title--button-discount {
-    line-height: 1.643125rem
-  }
-  .title--numbers {
-    font-size: 1.375rem
-  }
-  .title--numbers {
-    line-height: 2.375rem
-  }
   .title--counter {
-    font-size: 1.25rem
-  }
-  .title--counter {
-    line-height: 1.731875rem
+    line-height: 1.669375rem
   }
   .text {
-    font-size: .875rem
+    font-size: .8125rem
   }
   .text {
-    line-height: 1.19625rem
+    line-height: 1.13375rem
   }
   .text--bold {
-    line-height: 1.125rem
+    line-height: 1.0625rem
   }
   .text--footer {
-    font-size: .825rem
+    font-size: .7625rem
   }
   .text--footer {
-    line-height: 1.125rem
+    line-height: 1.0625rem
   }
   .text--caution {
-    font-size: .6875rem
+    font-size: .625rem
   }
   .text--caution {
-    line-height: .8625rem
+    line-height: .8rem
   }
   .start-page__image {
-    width: 18.5rem
+    width: 22.5rem
   }
   .faq-page__block:nth-child(2n) {
     max-width: 20.75rem
@@ -989,106 +997,101 @@ body {
     max-width: 15.6875rem
   }
 }
-@media (max-width:47.99875em) {
-  .audience-page__block:not(:last-child) {
-    margin-bottom: 1.6875rem
-  }
-}
-@media (min-width:25em)and (max-width:75em) {
+@media (min-width:23.4375em)and (max-width:75em) {
   section {
-    padding-left: clamp(.0000000625rem ,-1.2499999063rem + 4.999999875vw ,2.5rem)
+    padding-left: clamp(.0000000625rem ,-1.1363635455rem + 4.8484847273vw ,2.5rem)
   }
   section {
-    padding-right: clamp(.0000000625rem ,-1.2499999063rem + 4.999999875vw ,2.5rem)
+    padding-right: clamp(.0000000625rem ,-1.1363635455rem + 4.8484847273vw ,2.5rem)
   }
   .title {
-    font-size: clamp(1.6875rem ,1.4375rem + 1vw ,2.1875rem)
+    font-size: clamp(1.625rem ,1.3693181818rem + 1.0909090909vw ,2.1875rem)
   }
   .title {
-    line-height: clamp(2.356875rem ,2.1290625rem + .91125vw ,2.8125rem)
+    line-height: clamp(2.294375rem ,2.0588636364rem + 1.0048484848vw ,2.8125rem)
   }
   .title--h1 {
-    font-size: clamp(1.3125rem ,1.1875rem + .5vw ,1.5625rem)
+    font-size: clamp(1.25rem ,1.1079545455rem + .6060606061vw ,1.5625rem)
   }
   .title--h1 {
-    line-height: clamp(1.910625rem ,1.7721875rem + .55375vw ,2.1875rem)
+    line-height: clamp(1.848125rem ,1.6938636364rem + .6581818182vw ,2.1875rem)
   }
   .title--subtitle-1 {
-    font-size: clamp(1.0625rem ,.96875rem + .375vw ,1.25rem)
+    font-size: clamp(1.0625rem ,.9772727273rem + .3636363636vw ,1.25rem)
   }
   .title--subtitle-1 {
-    line-height: clamp(1.464375rem ,1.3215625rem + .57125vw ,1.75rem)
+    line-height: clamp(1.401875rem ,1.2436363636rem + .6751515152vw ,1.75rem)
   }
   .title--subtitle-2 {
-    font-size: clamp(1.125rem ,1.0625rem + .25vw ,1.25rem)
+    font-size: clamp(1.0625rem ,.9772727273rem + .3636363636vw ,1.25rem)
   }
   .title--subtitle-2 {
-    line-height: clamp(1.625rem ,1.5625rem + .25vw ,1.75rem)
+    line-height: clamp(1.5625rem ,1.4772727273rem + .3636363636vw ,1.75rem)
   }
   .title--price {
-    font-size: clamp(1.375rem ,1.28125rem + .375vw ,1.5625rem)
+    font-size: clamp(1.3125rem ,1.1988636364rem + .4848484848vw ,1.5625rem)
   }
   .title--price {
-    line-height: clamp(1.910625rem ,1.7721875rem + .55375vw ,2.1875rem)
+    line-height: clamp(1.848125rem ,1.6938636364rem + .6581818182vw ,2.1875rem)
   }
   .title--discount {
-    font-size: clamp(1rem ,.9375rem + .25vw ,1.125rem)
+    font-size: clamp(.9375rem ,.8522727273rem + .3636363636vw ,1.125rem)
   }
   .title--discount {
-    line-height: clamp(1.375rem ,1.28125rem + .375vw ,1.5625rem)
+    line-height: clamp(1.3125rem ,1.1988636364rem + .4848484848vw ,1.5625rem)
   }
   .title--button {
-    font-size: clamp(1.375rem ,1.28125rem + .375vw ,1.5625rem)
+    font-size: clamp(1.3125rem ,1.1988636364rem + .4848484848vw ,1.5625rem)
   }
   .title--button {
-    line-height: clamp(1.910625rem ,1.7721875rem + .55375vw ,2.1875rem)
+    line-height: clamp(1.848125rem ,1.6938636364rem + .6581818182vw ,2.1875rem)
   }
   .title--button-discount {
-    font-size: clamp(1.1875rem ,1.09375rem + .375vw ,1.375rem)
+    font-size: clamp(1.125rem ,1.0113636364rem + .4848484848vw ,1.375rem)
   }
   .title--button-discount {
-    line-height: clamp(1.643125rem ,1.4646875rem + .71375vw ,2rem)
+    line-height: clamp(1.580625rem ,1.39rem + .8133333333vw ,2rem)
   }
   .title--numbers {
-    font-size: clamp(1.375rem ,1.28125rem + .375vw ,1.5625rem)
+    font-size: clamp(1.3125rem ,1.1988636364rem + .4848484848vw ,1.5625rem)
   }
   .title--numbers {
-    line-height: clamp(2.375rem ,2.15625rem + .875vw ,2.8125rem)
+    line-height: clamp(2.3125rem ,2.0852272727rem + .9696969697vw ,2.8125rem)
   }
   .title--counter {
-    font-size: clamp(1.25rem ,1.1875rem + .25vw ,1.375rem)
+    font-size: clamp(1.1875rem ,1.1022727273rem + .3636363636vw ,1.375rem)
   }
   .title--counter {
-    line-height: clamp(1.731875rem ,1.5978125rem + .53625vw ,2rem)
+    line-height: clamp(1.669375rem ,1.5190909091rem + .6412121212vw ,2rem)
   }
   .text {
-    font-size: clamp(.875rem ,.8125rem + .25vw ,1rem)
+    font-size: clamp(.8125rem ,.7272727273rem + .3636363636vw ,1rem)
   }
   .text {
-    line-height: clamp(1.19625rem ,1.106875rem + .3575vw ,1.375rem)
+    line-height: clamp(1.13375rem ,1.0240909091rem + .4678787879vw ,1.375rem)
   }
   .text--bold {
-    line-height: clamp(1.125rem ,1.0625rem + .25vw ,1.25rem)
+    line-height: clamp(1.0625rem ,.9772727273rem + .3636363636vw ,1.25rem)
   }
   .text--footer {
-    font-size: clamp(.825rem ,.8rem + .1vw ,.875rem)
+    font-size: clamp(.7625rem ,.7113636364rem + .2181818182vw ,.875rem)
   }
   .text--footer {
-    line-height: clamp(1.125rem ,1.0625rem + .25vw ,1.25rem)
+    line-height: clamp(1.0625rem ,.9772727273rem + .3636363636vw ,1.25rem)
   }
   .text--caution {
-    font-size: clamp(.6875rem ,.65625rem + .125vw ,.75rem)
+    font-size: clamp(.625rem ,.5681818182rem + .2424242424vw ,.75rem)
   }
   .text--caution {
-    line-height: clamp(.8625rem ,.79375rem + .275vw ,1rem)
+    line-height: clamp(.8rem ,.7090909091rem + .3878787879vw ,1rem)
   }
   .start-page__image {
-    width: clamp(18.5rem ,7.4375rem + 44.25vw ,40.625rem)
+    width: clamp(22.5rem ,14.8295454545rem + 32.7272727273vw ,39.375rem)
   }
   .faq-page__block:nth-child(2n) {
-    max-width: clamp(20.75rem ,7.125rem + 54.5vw ,48rem)
+    max-width: clamp(20.75rem ,8.3636363636rem + 52.8484848485vw ,48rem)
   }
   .faq-page__block:nth-child(2n+1) {
-    max-width: clamp(15.6875rem ,3.53125rem + 48.625vw ,40rem)
+    max-width: clamp(15.6875rem ,4.6363636364rem + 47.1515151515vw ,40rem)
   }
 }
