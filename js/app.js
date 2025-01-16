@@ -3156,6 +3156,25 @@
                 prevEl: ".reviews-page__prev",
                 nextEl: ".reviews-page__next"
             },
+            breakpoints: {
+                640: {
+                    slidesPerView: 1,
+                    spaceBetween: 0,
+                    autoHeight: true
+                },
+                768: {
+                    slidesPerView: 2,
+                    spaceBetween: 20
+                },
+                992: {
+                    slidesPerView: 2,
+                    spaceBetween: 20
+                },
+                1268: {
+                    slidesPerView: 3,
+                    spaceBetween: 30
+                }
+            },
             on: {}
         });
     }
@@ -3171,5 +3190,32 @@
             }));
         }
     }), 0);
+    const updateDateAndCounter = () => {
+        const currentDate = new Date;
+        const nextDate = new Date(currentDate);
+        nextDate.setDate(currentDate.getDate() + 1);
+        const months = [ "січня", "лютого", "березня", "квітня", "травня", "червня", "липня", "серпня", "вересня", "жовтня", "листопада", "грудня" ];
+        const nextDay = nextDate.getDate();
+        const monthName = months[nextDate.getMonth()];
+        const elements = {
+            dateElement: document.getElementById("currentDate"),
+            hoursElement: document.getElementById("hours"),
+            minutesElement: document.getElementById("minutes"),
+            secondsElement: document.getElementById("seconds")
+        };
+        elements.dateElement.innerHTML = `${nextDay} ${monthName}`;
+        const endOfDay = new Date(currentDate);
+        endOfDay.setHours(23, 59, 59, 999);
+        const timeRemaining = endOfDay - currentDate;
+        const hours = Math.floor(timeRemaining / (1e3 * 60 * 60) % 24);
+        const minutes = Math.floor(timeRemaining / 1e3 / 60 % 60);
+        const seconds = Math.floor(timeRemaining / 1e3 % 60);
+        elements.hoursElement.innerHTML = hours.toString().padStart(2, "0");
+        elements.minutesElement.innerHTML = minutes.toString().padStart(2, "0");
+        elements.secondsElement.innerHTML = seconds.toString().padStart(2, "0");
+        if (timeRemaining <= 0) clearInterval(timeInterval);
+    };
+    const timeInterval = setInterval(updateDateAndCounter, 1e3);
+    updateDateAndCounter();
     window["FLS"] = true;
 })();
