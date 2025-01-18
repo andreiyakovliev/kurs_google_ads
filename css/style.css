@@ -216,12 +216,12 @@ body {
 }
 @media(min-width:23.4375em)and (max-width:75em) {
   .title--h1 {
-    font-size: clamp(1.25rem ,1.1079545455rem + .6060606061vw ,1.5625rem)
+    font-size: clamp(1.125rem ,.9261363636rem + .8484848485vw ,1.5625rem)
   }
 }
 @media(max-width:23.4375em) {
   .title--h1 {
-    font-size: 1.25rem
+    font-size: 1.125rem
   }
 }
 @media(min-width:75em) {
@@ -680,6 +680,14 @@ body {
 .footer__block p {
   line-height: 16px
 }
+.footer__block-contants {
+  display: flex;
+  flex-direction: column
+}
+.footer__block-links {
+  display: flex;
+  flex-direction: column
+}
 .footer__block-link {
   text-decoration: underline
 }
@@ -712,7 +720,7 @@ body {
   gap: .9375rem
 }
 .start-page__header:not(:last-child) {
-  margin-bottom: 1.7725rem
+  margin-bottom: 1.75rem
 }
 .start-page__icon {
   align-self: flex-start
@@ -729,7 +737,7 @@ body {
   }
 }
 .start-page__tag:not(:last-child) {
-  margin-bottom: 2.875rem
+  margin-bottom: 2.3125rem
 }
 @media(min-width:90em) {
   .start-page__title {
@@ -747,7 +755,7 @@ body {
   }
 }
 .start-page__title:not(:last-child) {
-  margin-bottom: 2.0625rem
+  margin-bottom: 2.3125rem
 }
 @media(min-width:90em) {
   .start-page__highlight {
@@ -765,13 +773,13 @@ body {
   }
 }
 .start-page__highlight:not(:last-child) {
-  margin-bottom: 1.9375rem
+  margin-bottom: 1.75rem
 }
 .start-page__highlight-text {
   display: inline-block
 }
 .start-page__feature {
-  margin-bottom: 1.9375rem
+  margin-bottom: 1.75rem
 }
 @media(min-width:90em) {
   .start-page__feature {
@@ -789,7 +797,7 @@ body {
   }
 }
 .start-page__feature--last-child {
-  margin-bottom: 2.375rem
+  margin-bottom: 1.75rem
 }
 .start-page__feature-text {
   display: inline-block
